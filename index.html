@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevendTech</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="#"><img src="src/assets/logocerto.png" alt="Logo"></a>
+    </div>
+    <nav id="navigation">
+      <ul>
+        <li><a href="#section1">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#section2">Soluções</a></li>
+        <li><a href="#section4">Projetos</a></li>
+        <li><a href="#">Contatos</a></li>
+      </ul>
+    </nav>
+    <button id="orcament">Orçamento</button>
+    <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <section id="section1" class="section1">
+    <div class="fundo">
+      <h1>DevendTech o futuro se inicia aqui!</h1>
+      <button class="botao">Orçamento</button>
+      <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="src/assets/fundo1.jfif" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="src/assets/fundo2.jfif" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="src/assets/fundo3.jfif" alt="Imagem 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="texto-section">
+    <h2 class="texto-section2">Colaboramos para <span>transformar</span> as ideias da sua empresa em soluções eficientes.</h2>
+    <h3 class="nossos-servicos2">Nossos serviços são exclusivos, realizamos um trabalho completo, oferecendo uma solução diferenciada para transformar a experiência dos seus clientes em algo único. </h3>
+  </div>
+
+  <section id="section2" class="section2">
+    <div class="servicos">
+      <div class="img-section2">
+        <img src="src/assets/1.png" alt="">
+      </div>
+      <div class="hidden">
+        <div class="textos-section">
+          <h3 class="nossos-servicos">SOMOS APAIXONADOS POR STARTUPS</h3>
+          <h1 class="texto-principal">Sites Comerciais</h1>
+          <h3 class="texto-cinza2">Desenvolvimento de sites personalizado</h3>
+          <p class="texto-cinza2">Sites comerciais para atrair vendas para seu negócio, trazendo sua presença do físico para a internet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="servicos reverse">
+      <div class="hidden">
+        <div class="textos-section-left">
+          <h3 class="nossos-servicos">SOMOS APAIXONADOS POR STARTUPS</h3>
+          <h1 class="texto-principal">Sites Institucionais</h1>
+          <h3 class="texto-cinza2">Desenvolvimento de sites personalizado</h3>
+          <p class="texto-cinza2">Sites Institucionais para divulgar sua empresa. Design moderno e otimizado para engajar e atrair novos clientes.</p>
+        </div>
+      </div>
+      <div class="img-section2-left">
+        <img src="src/assets/2.png" alt="">
+      </div>
+    </div>
+
+    <div class="servicos">
+      <div class="img-section2">
+        <img src="src/assets/3.png" alt="">
+      </div>
+      <div class="hidden">
+        <div class="textos-section">
+          <h3 class="nossos-servicos">SOMOS APAIXONADOS POR STARTUPS</h3>
+          <h1 class="texto-principal">Sites de Landing Pages</h1>
+          <h3 class="texto-cinza2">Desenvolvimento de sites personalizado</h3>
+          <p class="texto-cinza2">Páginas focadas em uma ação única do usuário, usando técnicas de marketing para direcioná-lo a ações, como compra de um produto ou contato por redes sociais.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="servicos reverse">
+      <div class="hidden">
+        <div class="textos-section-left">
+          <h3 class="nossos-servicos">SOMOS APAIXONADOS POR STARTUPS</h3>
+          <h1 class="texto-principal">Sites Educacionais</h1>
+          <h3 class="texto-cinza2">Desenvolvimento de sites personalizado</h3>
+          <p class="texto-cinza2">Oferecem conteúdos e recursos educacionais, como cursos online, tutoriais e materiais de estudo.</p>
+        </div>
+      </div>
+      <div class="img-section2-left">
+        <img src="src/assets/4.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <h1>Nossos <span>&nbsp;Clientes</span></h1>
+    <div class="carousel-container2">
+      <button class="carousel-button2 prev" onclick="prevSlidee()">❮</button>
+      <div class="carousel2">
+        <div class="carousel-item2"><img src="src/assets/Oasiz_name_-_Copia-removebg-preview.png" alt=""></div>
+        <div class="carousel-item2"><img src="src/assets/logoipsum.png" alt=""></div>
+        <div class="carousel-item2"><img src="src/assets/fundoamp.png" alt=""></div>
+        <div class="carousel-item2"><img src="src/assets/OFFICE CONT HORIZONTAL.png" alt=""></div>
+      </div>
+      <button class="carousel-button2 next" onclick="nextSlidee()">❯</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section4" id="section4">
+    <h1 class="title-clientes">Nossos Projetos</h1>
+    <div class="flex">
+      <div class="object algo">
+        <img src="src/assets/siteamp.jpeg" alt="">
+        <div class="detail">
+          <button class="button-item1"><a href="#item1" onclick="openModal()">Sobre</a></button>
+        </div>
+      </div>
+      <div class="object algo">
+        <img src="src/assets/siteoasiz.jpeg" alt="">
+        <div class="detail">
+          <button class="button-item1"><a href="#item1" onclick="openModal()">Sobre</a></button>
+        </div>
+      </div>
+      <div class="object algo">
+        <img src="src/assets/siteofice.jpeg" alt="">
+        <div class="detail">
+          <button class="button-item1"><a href="#item1" onclick="openModal()">Sobre</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Solicite um orçamento</h2>
+        <p>Preencha o formulário com os dados necessários. Nosso setor comercial irá entrar em contato com você para tirar suas dúvidas e lhe enviar o seu orçamento.</p>
+        <a href="#" class="whatsapp-button">
+          <span>Chamar no WhatsApp</span>
+          <img src="src/assets/icons8-whatsapp-25.png" alt="WhatsApp Icon">
+        </a>
+      </div>
+      <div class="contact-form">
+        
+        <form  action="http://formmail.kinghost.net/formmail.cgi" method="POST">
+          <input type="hidden" name="recipient" value="bielcastro503@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+          <input type="hidden" name="redirect" value= "http://127.0.0.1:3000/frontend/#">  <!--Após o envio, o usuário será redirecionado para a página configurada aqui -->
+          <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+          <input type="hidden" name="email" value="bielcastro503@gmail.com">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+          <input type="text" name="nome" placeholder="Nome" required>
+          <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+    <div class="menufooter">
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Soluções</a></li>
+        <li><a href="">Projetos</a></li>
+        <li><a href="">contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-container">
+
+      <p class="hours">Horário de atendimento: 08h00 às 17h30</p>
+      <p class="address">Endereço: AV Duarte coelho, N21, Igarassu - PE, CEP: 53605-030</p>
+      <p class="contacts">
+        Telefone: (81) 0000-0000<br>
+        WhatsApp: (81) 90000-0000
+      </p>
+      <p class="copyright">© 2024 DevendTech - Todos os direitos reservados. Devendtech PE</p>
+    </div>
+
+    <div class="menufooter">
+      <div class="nossas">Nossas redes</div><br>
+      <div class="social-icons">
+        <a href="#"><img src="src/assets/icons8-instagram-25.png" alt="Instagram"></a>
+        <a href="#"><img src="src/assets/icons8-whatsapp-25.png" alt="WhatsApp"></a>
+        <a href="#"><img src="src/assets/icons8-linkedin-25.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch('send_mail.php', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.text())
+        .then(result => {
+          alert(result);  // Mostra a mensagem de sucesso ou erro
+        })
+        .catch(error => {
+          console.error('Erro:', error);
+          alert('Erro ao enviar o formulário.');
+        });
+    });
+  </script>
+</body>
+
+</html>

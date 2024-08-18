@@ -1,0 +1,1120 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background: transparent;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 10vh;
+    padding: 0.1%;
+}
+
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+header .logo img {
+    width: 130px;
+    transition: 0.9s ease;
+}
+
+.logo img.scrolledd {
+    width: 100px;
+
+}
+
+header .logo img:hover {
+    transform: scale(1.2);
+}
+
+header #navigation ul {
+    display: flex;
+    gap: 30px;
+}
+
+header #navigation ul li {
+    list-style-type: none;
+    transition: transform 1s;
+}
+
+header #navigation ul li:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+header #navigation ul li a {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+header #navigation ul li a:hover {
+    color: white;
+}
+
+
+header button {
+    width: 11%;
+    padding: 8px;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: transform 1s;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+button#orcament:hover {
+    border: 1px solid white;
+    /* Define a borda como transparente para aplicar o gradiente */
+    border-image-slice: 1;
+    /* Garante que o gradiente preencha toda a borda */
+    transform: scale(1.1);
+    opacity: 1;
+    background: white;
+    color: black;
+}
+
+
+.fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0.5, 0.5, 0.5, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.fundo h1 {
+    color: white;
+    position: absolute;
+    z-index: 2;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.fundo .botao {
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 160px;
+    transition: transform 1s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.fundo .botao:hover {
+    border: 1px solid white;
+    /* Define a borda como transparente para aplicar o gradiente */
+    border-image-slice: 1;
+    /* Garante que o gradiente preencha toda a borda */
+    transform: scale(1.1);
+    opacity: 1;
+    background: white;
+    color: black;
+}
+
+.carousel {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+section.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    background: #F5F5F7;
+    color: #dddddd;
+}
+
+.nossos-servicoss {
+    font-weight: 500;
+    color: 797979;
+}
+
+.nossos-servicos {
+    text-align: left;
+    font-weight: 500;
+}
+
+h2.texto-section2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    max-width: 60%;
+}
+
+div.texto-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+}
+
+.texto-section2 span {
+    color: #499494;
+}
+
+
+div.row {
+    margin-top: 3%;
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(90deg, #000000, #424348, #FFFFFF);
+}
+
+.section2 .texto-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin-top: 8%;
+    align-items: center;
+}
+
+h3.nossos-servicos2 {
+    color: #fefefe;
+    font-size: 16px;
+    text-align: center;
+    max-width: 60%;
+}
+
+div.servicos:first-child {
+    margin-top: 10%;
+}
+
+div.img-section2 img {
+    border-radius: 10px;
+    max-width: 100%;
+    width: 550px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+div.servicos {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.textos-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.textos-section-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 10px;
+}
+
+div.img-section2-left img {
+    margin-right: 5%;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 550px;
+    height: 400px;
+    margin-bottom: 20px;
+
+}
+
+h3.nossos-servicos {
+    font-size: 14px;
+    color: #499494;
+    font-weight: bold;
+
+}
+
+h1.texto-principal {
+    font-weight: 500;
+    font-size: 30px;
+    color: #424348;
+}
+
+h3.texto-cinza2 {
+    font-weight: 500;
+    color: #555555;
+}
+
+p.texto-cinza2 {
+    color: #555555;
+    font-weight: 400;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-0%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    gap: 100px;
+    background: #000000;
+    color: white;
+    padding: 20px;
+}
+
+.section3 span {
+    color: #499494;
+}
+
+
+.section3 h1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.carousel-container2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel2 {
+    display: flex;
+    transition: transform 1s ease;
+    gap: 250px;
+    width: 40%;
+}
+
+div.carousel-item2:first-child {
+    margin-left: 15%;
+}
+
+div.carousel-item2:nth-child(1) {
+    margin-top: -2%;
+}
+
+div.carousel-item2:nth-child(4) {
+    margin-top: 5%;
+}
+
+.carousel2 img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    filter: grayscale();
+    transition: transform 0.3s;
+}
+
+.carousel2 img:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    filter: none;
+
+    transform: scale(1.1);
+}
+
+
+
+.carousel-item2 {
+    flex: 0 0 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    min-width: 200px;
+}
+
+
+.carousel-button2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.carousel-button2.prev {
+    left: 10px;
+}
+
+.carousel-button2.next {
+    right: 10px;
+}
+
+
+
+
+
+hr {
+    margin-left: 10%;
+    background: white;
+    width: 80%;
+    height: 1px;
+}
+
+.title-clientes {
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 500;
+    color: white;
+    margin-top: 8%;
+}
+
+section.section4 {
+    height: 80vh;
+    background: #000000;
+}
+
+div.flex {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+div.object {
+    position: relative;
+
+}
+
+div.algo {
+    width: 600px;
+    height: 200px;
+    transition: all 1s ease-in-out;
+}
+
+
+div.object img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.object::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+div.object.show1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.00);
+
+}
+
+
+div.object::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #000000, #424348, #FFFFFF);
+
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div.detail {
+    margin-top: -10px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.object:last-child {
+    margin-right: 3%;
+    background-color: #499494;
+}
+
+.detail.show1 {
+    transition: all 1s ease-in-out;
+    justify-content: end;
+    align-items: center;
+    opacity: 1;
+    display: flex;
+    margin-top: -10px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.detail button {
+    background-color: transparent;
+    display: none;
+}
+
+
+.detail button a {
+    color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+.detail.show1 button a {
+    font-size: 0.65rem;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fcfcfc;
+    border: #499494 1px solid;
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.detail.show1 button a:hover {
+    background-color: #2204ca;
+}
+
+
+div.flex .object:nth-child(1),
+div.flex .object:nth-child(4) {
+    margin-left: 50px;
+}
+
+div.show1 {
+    transform: scale(1.1);
+    width: 42%;
+    height: 30vh;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.hidden2 {
+    display: none;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
+.details {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(7, 7, 8);
+    border-radius: 3%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+}
+
+h1.details-about {
+    color: #ebe8e8;
+    font-weight: 500;
+    margin-left: 10%;
+    display: flex;
+    margin-top: 17%;
+}
+
+p.details-about {
+    margin-left: 10% !important;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #828282;
+    margin-left: 20%;
+    max-width: 450px;
+}
+
+.details video {
+    width: 650px;
+    height: 400px;
+    margin-top: 7%;
+    margin-left: 3%;
+    border-radius: 1%;
+}
+
+.details iframe.stop {
+    opacity: 0;
+}
+
+button.exit {
+    margin-left: 5%;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 0;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #000;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contact-info {
+    max-width: 500px;
+}
+
+.contact-info h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #499494;
+    ;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    background-color: #499494;
+    ;
+}
+
+.contact-form {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #499494;
+    ;
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #499494;
+    ;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2E2E2E;
+    color: #B0B0B0;
+    padding: 20px;
+    text-align: center;
+
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer .menufooter ul {
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer .menufooter ul li {
+    list-style-type: none;
+    transition: transform 1s;
+}
+
+footer .menufooter ul li:hover {
+    transform: scale(1.1);
+    color: #dfdfdf;
+}
+
+footer .menufooter ul li a {
+    text-decoration: none;
+    color: #B0B0B0;
+}
+
+footer .menufooter ul li a:hover {
+    color: white;
+}
+
+.footer-container {
+    max-width: 1200px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    /* Adjust icon size */
+    height: 30px;
+}
+
+.hours,
+.address,
+.contacts,
+.copyright {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        width: 120px;
+    }
+
+    header {
+        padding: 20px;
+        height: auto;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+
+    header #navigation ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    header #navigation ul.ativo {
+        display: flex;
+    }
+
+    #navigation ul li a {
+        font-size: 2rem;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .section2 {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .section2 .servicos {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .carousel-container2 {
+        height: 50vh;
+        margin-top: 30%;
+    }
+
+    .carousel2 {
+        width: 100%;
+        gap: 100px;
+        padding: 10px;
+    }
+
+    .carousel-item2 {
+        min-width: 150px;
+        max-width: 150px;
+        font-size: 14px;
+        height: 50%;
+    }
+
+    #prevButton2,
+    #nextButton2 {
+        font-size: 1.5rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .section3 h1 {
+        margin-top: -30%;
+    }
+
+    .section3 {
+        height: 100vh;
+        margin-top: 100%;
+    }
+
+    .section4 {
+        padding: 10px;
+        height: auto;
+    }
+
+    .section4 form {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .logo img {
+        width: 100px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header #navigation ul li a {
+        font-size: 1.5rem;
+    }
+
+    .fundo h1 {
+        font-size: 16px;
+        margin-left: 0%;
+    }
+
+
+    #menu-icon {
+        display: block;
+    }
+
+
+    header #navigation ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-left: 40%;
+        margin-top: -2.5%;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    header #navigation ul.ativo {
+        display: flex;
+    }
+
+    .fundo .botao {
+        width: 100px;
+        font-size: 12px;
+        margin-top: 25%;
+        margin-left: 38%;
+    }
+
+    .fundo .botao {
+        margin-left: 0;
+    }
+
+    h2.texto-section2 {
+        font-size: 25px;
+        max-width: 1000px;
+        margin-bottom: 5%;
+    }
+
+    h3.nossos-servicos2 {
+        max-width: 300px;
+    }
+
+    .section2 {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .section2 .servicos:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .section2 .servicos:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .section2 .servicos {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .carousel-container2 {
+        height: 50vh;
+        margin-top: 30%;
+    }
+
+    .carousel2 {
+        width: 100%;
+        gap: 100px;
+        padding: 10px;
+    }
+
+    .carousel-item2 {
+        min-width: 120px;
+        max-width: 120px;
+        font-size: 14px;
+        height: 50%;
+    }
+
+    .section3 {
+        height: 70vh;
+        margin-top: 60%;
+    }
+
+    .section3 h1 {
+        font-size: 35pxf;
+    }
+
+    .section4 {
+        padding: 5px;
+        height: auto;
+    }
+
+    .section4 .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section4 .flex .object {
+        width: 350px;
+    }
+
+    .section4 .flex img {
+        width: 350px;
+    }
+
+    div.flex .object:nth-child(1) {
+        margin: 0%;
+    }
+
+
+    .contact-info h2 {
+        margin-top: 40%;
+    }
+
+    .section4 form {
+        gap: 5px;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .contact-section .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 100vh;
+
+    }
+
+    .menufooter:first-child {
+        display: none;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
